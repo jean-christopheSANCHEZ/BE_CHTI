@@ -1,0 +1,107 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 thumb
+    2 00000000                 area             madata, data, readwrite
+    3 00000000                 export           calcul
+    4 00000000                 area             moncode, code, readonly
+    5 00000000                 import           TabSin
+    6 00000000                 import           TabCos
+    7 00000000         
+    8 00000000         calcul  proc
+    9 00000000         
+   10 00000000         
+   11 00000000 B500            push             {lr}
+   12 00000002 B410            push             {r4}
+   13 00000004 F04F 0C02       mov              r12 ,#2
+   14 00000008 FB00 F00C       mul              r0,r0,r12
+   15 0000000C B420            push             {r5}        ;
+   16 0000000E 4D09            ldr              r5,=TabSin
+   17 00000010 B440            push             {r6}        ;
+   18 00000012 4E09            ldr              r6,=TabCos
+   19 00000014 F935 1010       ldrsh            r1,[r5,r0,lsl #1]
+   20 00000018 F936 2010       ldrsh            r2,[r6,r0,lsl #1]
+   21 0000001C BC40            pop              {r6}
+   22 0000001E BC20            pop              {r5}
+   23 00000020 FB01 F101       mul              r1,r1,r1
+   24 00000024 FB02 F202       mul              r2,r2,r2
+   25 00000028 EB01 0002       add              r0,r1,r2
+   26 0000002C BC10            pop              {r4}
+   27 0000002E F85D EB04       pop              {lr}
+   28 00000032 4770            bx               lr
+   29 00000034                 endp
+   30 00000034                 end
+              00000000 
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\obj\calcul.d -o.\obj\calcul.o -I.\RTE\_Simu -IC:\Users\Lenovo\Ap
+pData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include -IC:\Users\Lenovo\AppD
+ata\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include --predefine="__EVAL
+ SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 52
+9" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --list=calcul.l
+st Calcul.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+madata 00000000
+
+Symbol: madata
+   Definitions
+      At line 2 in file Calcul.s
+   Uses
+      None
+Comment: madata unused
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+calcul 00000000
+
+Symbol: calcul
+   Definitions
+      At line 8 in file Calcul.s
+   Uses
+      At line 3 in file Calcul.s
+Comment: calcul used once
+moncode 00000000
+
+Symbol: moncode
+   Definitions
+      At line 4 in file Calcul.s
+   Uses
+      None
+Comment: moncode unused
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+TabCos 00000000
+
+Symbol: TabCos
+   Definitions
+      At line 6 in file Calcul.s
+   Uses
+      At line 18 in file Calcul.s
+Comment: TabCos used once
+TabSin 00000000
+
+Symbol: TabSin
+   Definitions
+      At line 5 in file Calcul.s
+   Uses
+      At line 16 in file Calcul.s
+Comment: TabSin used once
+2 symbols
+342 symbols in table
