@@ -1,4 +1,3 @@
-#include <stdio.h>
 #define N 64
 
 short calcul( int);
