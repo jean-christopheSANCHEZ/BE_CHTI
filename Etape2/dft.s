@@ -13,11 +13,11 @@ dft proc
 	push {r8}
 	mov r6, #0 						
 	mov	r8, #0						;Somme
-loop	ldrsh r5, [r0, r6, LSL #1] 				;stockage x(i)
-	mul r7, r6, r1 						;Calcule i*k
+loop	ldrsh r5, [r0, r6, LSL #1] 	;stockage x(i)
+	mul r7, r6, r1 					;Calcule i*k
 	and	r7, #0x3F 					;i*k mod 64
-	ldrsh r12, [r2, r7, LSL #1]				;sin(i*k*2pi/N) = tabsin(i*k mod 64)       -- cos
-	mla r8, r5, r12, r8 					; =+(x(i)*tabsin(i*k))
+	ldrsh r12, [r2, r7, LSL #1]		;sin(i*k*2pi/N) = tabsin(i*k mod 64)       -- cos
+	mla r8, r5, r12, r8 			; =+(x(i)*tabsin(i*k))
 	
 	add r6, #1
 	cmp r6, #64
