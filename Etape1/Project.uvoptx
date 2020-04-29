@@ -166,7 +166,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\callback.s</Filename>
+          <Filename>C:\Users\Lenovo\Desktop\BE_CHTI\Etape1\callback.s</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\CHTI\callback.s\17</Expression>
         </Bp>
@@ -182,7 +182,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\callback.s</Filename>
+          <Filename>C:\Users\Lenovo\Desktop\BE_CHTI\Etape1\callback.s</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -392,7 +392,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\callback.s</Filename>
+          <Filename>C:\Users\Lenovo\Desktop\BE_CHTI\Etape1\callback.s</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -408,7 +408,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\callback.s</Filename>
+          <Filename>C:\Users\Lenovo\Desktop\BE_CHTI\Etape1\callback.s</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -506,24 +506,24 @@
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>3</FileNumber>
-      <FileType>4</FileType>
+      <FileType>2</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\gassp72.lib</PathWithFileName>
-      <FilenameWithoutPath>gassp72.lib</FilenameWithoutPath>
+      <PathWithFileName>.\Src\callback.s</PathWithFileName>
+      <FilenameWithoutPath>callback.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>4</FileNumber>
-      <FileType>2</FileType>
+      <FileType>4</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\callback.s</PathWithFileName>
-      <FilenameWithoutPath>callback.s</FilenameWithoutPath>
+      <PathWithFileName>..\common\gassp72.lib</PathWithFileName>
+      <FilenameWithoutPath>gassp72.lib</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

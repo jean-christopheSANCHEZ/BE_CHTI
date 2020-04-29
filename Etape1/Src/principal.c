@@ -1,4 +1,4 @@
-#include "../gassp72.h"
+#include "../../common/gassp72.h"
 
 void callback(void );
 int etat=0;
