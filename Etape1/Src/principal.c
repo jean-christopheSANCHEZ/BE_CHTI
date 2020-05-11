@@ -1,6 +1,6 @@
 #include "../../common/gassp72.h"
 void callback(void );
-int etat=0;
+
 
 int main(void)
 {
