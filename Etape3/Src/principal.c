@@ -6,7 +6,7 @@ short int dma_buf[64];
 int cptOcc[6] = {0,0,0,0,0,0};
 int k[6] = {17,18,19,20,23,24};
 int points[6] = {0,0,0,0,0,0};
-
+int M2TIR = 985988; //calcul prof
 
 void sys_callback(){
 	// Démarrage DMA pour 64 points
@@ -18,10 +18,10 @@ void sys_callback(){
 	Duree_Ech_ticks();
 	Init_TimingADC_ActiveADC_ff();
 	
-	for(int i = 0; i<64;i++){
-		
-		if(dft_dma[i] == 17){
-			cptOcc[0] = cptOcc[0] + 1;
+	for(i=0;i<6;i++){
+		tmp_dft=M2((short *)dma_buf,indices_k[i]); //changer i
+		if(tmp_dft >= M2TIR){
+			cptOcc[i]++;
 		}
 	}
 	
