@@ -1,8 +1,32 @@
 #include "../../common/GFSSP72/gfssp72.lib"
-#include "../../common/GFSSP72/gassp72.h"
+#include "../../common/GFSSP72/gassp72.h" 
 
-short int DMA1[64];
-int cptOcc[6];
+unsigned int cal(short *,int);
+short int dma_buf[64];
+int cptOcc[6] = {0,0,0,0,0,0};
+int k[6] = {17,18,19,20,23,24};
+int points[6] = {0,0,0,0,0,0};
+
+
+void sys_callback(){
+	// Démarrage DMA pour 64 points
+	unsigned int tmp_dft = 0;
+	Start_DMA1(64);
+	Wait_On_End_Of_DMA1();
+	Stop_DMA1;
+	
+	Duree_Ech_ticks();
+	Init_TimingADC_ActiveADC_ff();
+	
+	for(int i = 0; i<64;i++){
+		
+		if(dft_dma[i] == 17){
+			cptOcc[0] = cptOcc[0] + 1;
+		}
+	}
+	
+}
+
 
 int main(void)
 {
@@ -16,7 +40,7 @@ GPIO_Configure(GPIOB, 1, OUTPUT, OUTPUT_PPULL);
 GPIO_Configure(GPIOB, 14, OUTPUT, OUTPUT_PPULL);
 
 // activation ADC, sampling time 1us
-Init_TimingADC_ActiveADC_ff( ADC1, 72 );
+Init_TimingADC_ActiveADC_ff( ADC1, 33 ); // on se place dans le cas facile à la valeur 33
 Single_Channel_ADC( ADC1, 2 );
 // Déclenchement ADC par timer2, periode (72MHz/320kHz)ticks
 Init_Conversion_On_Trig_Timer_ff( ADC1, TIM2_CC2, 225 );
@@ -35,3 +59,4 @@ while	(1)
 	
 	}
 }
+
