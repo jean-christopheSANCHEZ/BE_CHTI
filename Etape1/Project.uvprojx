@@ -393,14 +393,14 @@
               <FilePath>.\Src\principal.c</FilePath>
             </File>
             <File>
-              <FileName>callback.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\callback.s</FilePath>
-            </File>
-            <File>
               <FileName>gassp72.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\common\gassp72.lib</FilePath>
+            </File>
+            <File>
+              <FileName>carre.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\carre.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -796,14 +796,14 @@
               <FilePath>.\Src\principal.c</FilePath>
             </File>
             <File>
-              <FileName>callback.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Src\callback.s</FilePath>
-            </File>
-            <File>
               <FileName>gassp72.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\common\gassp72.lib</FilePath>
+            </File>
+            <File>
+              <FileName>carre.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\carre.s</FilePath>
             </File>
           </Files>
         </Group>

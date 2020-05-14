@@ -1,7 +1,6 @@
 #include "../../common/gassp72.h"
-
 void callback(void );
-int etat=0;
+
 
 int main(void)
 {
@@ -12,7 +11,7 @@ GPIO_Configure(GPIOB, 1, OUTPUT, OUTPUT_PPULL);
 // initialisation du timer 4
 // Periode_en_Tck doit fournir la durée entre interruptions,
 // exprimée en périodes Tck de l'horloge principale du STM32 (72 MHz)
-Timer_1234_Init_ff( TIM4, 72000000/200 );
+Timer_1234_Init_ff( TIM4, 72*10*3 );
 // enregistrement de la fonction de traitement de l'interruption timer
 // ici le 2 est la priorité, timer_callback est l'adresse de cette fonction, a créér en asm,
 // cette fonction doit être conforme à l'AAPCS
