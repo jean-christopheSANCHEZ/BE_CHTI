@@ -20,9 +20,10 @@ int k[6] = {17,18,19,20,23,24}; //represente chaque joueurs differente
 
 int points[6] = {0,0,0,0,0,0}; //scores de joueurs differents
 
-Si compteur est superieur a la valeur pose （3 comme exemple）, on ajoute un point dans le tableau de points de joueur
-
-on peut oberver le tableau de 'points' de tracer les scores de joueurs differents
+on peut oberver le tableau de 'points' de tracer les scores de joueurs differents, on se met dans le watch de debugger
+de tableau points, on a teste dans le cas de signal mode 0x33 (51), qui marche sans probleme avec les valeurs attendues 
+comme  points[0] = 1, points[1] = 2 etc...  On a ainsi teste le cas avec du bruit en mode 0x3E (62), on a obtenue le meme 
+resultat qu'avec mode 0x33.
 
 
 *OBJECTIF-3 Gérer le son   En train
