@@ -7,9 +7,13 @@ Yifan Wang
 Chaque étape mis dans les fichers correspondants. Les fichiers partagés sont mis dans le commun.
 
 Etape 1 fait générateur de signaux alternée,dans le mode debugger Logic analyser montre correctement le signal alternee 
+
 Etape 1.2 correspond l'objectif 3
+
 Etape 2 Correspond l'objectif 1, calcul de DFT 
+
 Etape 3 Correspond l'objectif 2, calcul de scores pour des joueurs
+
 
 
 # *OBJECTIF-1 DFT SIMU    Etape2    
