@@ -16,8 +16,8 @@ Etape 1 fait/ Dans le mode debugger Logic analyser montre correctement le signal
 
 
 
-# *OBJECTIF-2 DFT REEL    
-Etape3 compteur de points fait/ et gérer le score des 6 joueurs
+# *OBJECTIF-2 DFT REEL   Etape3
+compteur de points fait/ et gérer le score des 6 joueurs
 on a cree ces varaiables pour gerer les scores de 6 joueurs:
 
 int cptOcc[6] = {0,0,0,0,0,0}; //compteur de signal superieur a la valeur attendu
