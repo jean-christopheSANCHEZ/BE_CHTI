@@ -5,8 +5,8 @@ Yifan Wang
 
 *OBJECTIF-1 DFT SIMU    Etape2 jeux de donnee test fait/
 
-*OBJECTIF-2 DFT REEL    Nous venons de commencer, nous avons pas trop bien compris
+*OBJECTIF-2 DFT REEL   compteur de points fait
 
 fichier mieux organisé/
 
-Si les documents dans le fichier ne marche pas, veuillez utiliser rar
+
