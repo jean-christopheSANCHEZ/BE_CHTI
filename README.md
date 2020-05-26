@@ -4,14 +4,16 @@ Jean-Christphe Sanchez
 
 Yifan Wang
 
-29_4_2020
+Chaque étape mis dans les fichers correspondants. Les fichiers partagés sont mis dans le commun.
 
-Etape 1 fait/ Dans le mode debugger Logic analyser montre correctement le signal alternee 
-
+Etape 1 fait générateur de signaux alternée,dans le mode debugger Logic analyser montre correctement le signal alternee 
+Etape 1.2 correspond l'objectif 3
+Etape 2 Correspond l'objectif 1, calcul de DFT 
+Etape 3 Correspond l'objectif 2, calcul de scores pour des joueurs
 
 
 # *OBJECTIF-1 DFT SIMU    Etape2    
-  jeux de donnee test fait/
+  jeux de donnee test fait
   jeux de donnee offcielle, on a obtenue le resultat attendu
 
 
@@ -35,9 +37,8 @@ resultat qu'avec mode 0x33.
 
 
 # *OBJECTIF-3 Gérer le son Etape1.2   
-En train
 
+Mis en place de projet
 
-fichier mieux organisé/
 
 
