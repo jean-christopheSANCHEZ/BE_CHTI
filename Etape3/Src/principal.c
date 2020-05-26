@@ -27,7 +27,7 @@ void sys_callback(){
 		else{
 			cptOcc[i]=0; //sigal termine avant validation
 		}
-		if (cptOcc[i] == 3) { //valeur de validation depasse
+		if (cptOcc[i] == 6) { //valeur de validation depasse
 			points[i]++; //point augmante
 			cptOcc[i] = 0; //remet a zero? est-il necessaire
 		} 
@@ -48,7 +48,7 @@ GPIO_Configure(GPIOB, 1, OUTPUT, OUTPUT_PPULL);
 GPIO_Configure(GPIOB, 14, OUTPUT, OUTPUT_PPULL);
 
 // activation ADC, sampling time 1us
-Init_TimingADC_ActiveADC_ff( ADC1, 33 ); // on se place dans le cas facile à la valeur 33
+Init_TimingADC_ActiveADC_ff( ADC1, 62 ); // on se place dans le cas facile à la valeur 33
 Single_Channel_ADC( ADC1, 2 );
 // Déclenchement ADC par timer2, periode (72MHz/320kHz)ticks
 Init_Conversion_On_Trig_Timer_ff( ADC1, TIM2_CC2, 225 );
