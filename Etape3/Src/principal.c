@@ -1,12 +1,13 @@
-#include "../../common/GFSSP72/gfssp72.lib"
-#include "../../common/GFSSP72/gassp72.h" 
 
+#include "../../common/GFSSP72/gassp72.h" 
+#define SYSTICK_PER 1440000 //20ms   72*20 000= 1440 000
+#define M2TIR 0xf0b84 //int M2TIR = 985988 calcul DU COURS sous format 32.0
 unsigned int cal(short *,int);
-short int dma_buf[64];
+vu16 dma_buf[64]; //warning indicates vu16
 int cptOcc[6] = {0,0,0,0,0,0};
 int k[6] = {17,18,19,20,23,24};
 int points[6] = {0,0,0,0,0,0};
-int M2TIR = 985988; //calcul DU COURS
+//int M2TIR = 985988; //calcul DU COURS
 
 void sys_callback(){
 	// Démarrage DMA pour 64 points
@@ -15,7 +16,7 @@ void sys_callback(){
 	Wait_On_End_Of_DMA1();
 	Stop_DMA1;
 	
-	Duree_Ech_ticks();
+	//Duree_Ech_ticks();
 	//Init_TimingADC_ActiveADC_ff();
 	
 	for(int i=0;i<6;i++){
@@ -28,7 +29,7 @@ void sys_callback(){
 		}
 		if (cptOcc[i] == 3) { //valeur de validation depasse
 			points[i]++; //point augmante
-			//cptOcc[i] = 0; //remet a zero? est-il necessaire
+			cptOcc[i] = 0; //remet a zero? est-il necessaire
 		} 
 	}
 	
