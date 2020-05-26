@@ -7,6 +7,8 @@ GPIOB_BSRR	equ	0x40010C10	; Bit Set/Reset register
 	include etat.inc
 
 callback proc
+		
+	TIM3_CCR3	equ	0x4000043C	; adresse registre PWM
 	
 	ldr r10,=tot 
 	LDRSB R9,[r10]  ; Load register signed byte
