@@ -397,6 +397,16 @@
               <FileType>2</FileType>
               <FilePath>.\Src\Trigo.asm</FilePath>
             </File>
+            <File>
+              <FileName>calcul.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\calcul.s</FilePath>
+            </File>
+            <File>
+              <FileName>dft.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\dft.s</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -794,6 +804,16 @@
               <FileName>Trigo.asm</FileName>
               <FileType>2</FileType>
               <FilePath>.\Src\Trigo.asm</FilePath>
+            </File>
+            <File>
+              <FileName>calcul.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\calcul.s</FilePath>
+            </File>
+            <File>
+              <FileName>dft.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\dft.s</FilePath>
             </File>
           </Files>
         </Group>

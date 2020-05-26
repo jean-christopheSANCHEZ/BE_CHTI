@@ -6,7 +6,7 @@ short int dma_buf[64];
 int cptOcc[6] = {0,0,0,0,0,0};
 int k[6] = {17,18,19,20,23,24};
 int points[6] = {0,0,0,0,0,0};
-int M2TIR = 985988; //calcul prof
+int M2TIR = 985988; //calcul DU COURS
 
 void sys_callback(){
 	// Démarrage DMA pour 64 points
@@ -16,13 +16,20 @@ void sys_callback(){
 	Stop_DMA1;
 	
 	Duree_Ech_ticks();
-	Init_TimingADC_ActiveADC_ff();
+	//Init_TimingADC_ActiveADC_ff();
 	
-	for(i=0;i<6;i++){
-		tmp_dft=M2((short *)dma_buf,indices_k[i]); //changer i
+	for(int i=0;i<6;i++){
+		tmp_dft=cal((short *)dma_buf,k[i]); //changer i
 		if(tmp_dft >= M2TIR){
-			cptOcc[i]++;
+			cptOcc[i]++;  //signal i recu
 		}
+		else{
+			cptOcc[i]=0; //sigal termine avant validation
+		}
+		if (cptOcc[i] == 3) { //valeur de validation depasse
+			points[i]++; //point augmante
+			//cptOcc[i] = 0; //remet a zero? est-il necessaire
+		} 
 	}
 	
 }
