@@ -57,4 +57,4 @@ bien 91us
 
 ![Optional Text](../master/images/screenshot1.png)
 
-Voici le signal le signal sonore obtenu (fichier bruitverre.asm)
+Voici le signal le signal sonore obtenu, qui correspond a l'allure attendu (fichier bruitverre.asm)
