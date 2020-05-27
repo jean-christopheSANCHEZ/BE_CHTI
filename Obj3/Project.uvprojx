@@ -398,9 +398,14 @@
               <FilePath>..\common\gassp72.lib</FilePath>
             </File>
             <File>
-              <FileName>carre.s</FileName>
+              <FileName>timer_callback.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Src\carre.s</FilePath>
+              <FilePath>.\Src\timer_callback.s</FilePath>
+            </File>
+            <File>
+              <FileName>bruitverre.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\common\son\bruitverre.asm</FilePath>
             </File>
           </Files>
         </Group>
@@ -801,9 +806,14 @@
               <FilePath>..\common\gassp72.lib</FilePath>
             </File>
             <File>
-              <FileName>carre.s</FileName>
+              <FileName>timer_callback.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Src\carre.s</FilePath>
+              <FilePath>.\Src\timer_callback.s</FilePath>
+            </File>
+            <File>
+              <FileName>bruitverre.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\common\son\bruitverre.asm</FilePath>
             </File>
           </Files>
         </Group>
