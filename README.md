@@ -46,5 +46,12 @@ resultat qu'avec mode 0x33.
 # *OBJECTIF-3 Gérer le son
 
 
+Le décalage obtenu est bien 91µsecondes comme vous pouvdez le constater sur le screnn ci-dessous.
+<img src="images/screeshot2.png" alt="screen2"/>
 
-<img src="images/screeshot1" alt="screen1"/>
+
+
+
+
+Voici le signal le signal sonore obtenu en asm (fichier bruitverre.asm)
+<img src="images/screeshot1.png" alt="screen1"/>
