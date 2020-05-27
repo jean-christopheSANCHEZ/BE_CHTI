@@ -46,12 +46,15 @@ resultat qu'avec mode 0x33.
 # *OBJECTIF-3 Gérer le son
 
 
-Le décalage obtenu est bien 91µsecondes comme vous pouvdez le constater sur le screnn ci-dessous.
 ![Optional Text](../master/images/screenshot2.png)
 
+En utilisant system analyser en mode analogique de ce bruitverre, on peut constater que l'echantillonage est 
+bien 91us
 
 
 
 
-Voici le signal le signal sonore obtenu en asm (fichier bruitverre.asm)
+
 ![Optional Text](../master/images/screenshot1.png)
+
+Voici le signal le signal sonore obtenu (fichier bruitverre.asm)
