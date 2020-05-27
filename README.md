@@ -47,11 +47,11 @@ resultat qu'avec mode 0x33.
 
 
 Le décalage obtenu est bien 91µsecondes comme vous pouvdez le constater sur le screnn ci-dessous.
-<img src="images/screeshot2.png" alt="screen2"/>
+![Optional Text](../master/images/screenshot2.png)
 
 
 
 
 
 Voici le signal le signal sonore obtenu en asm (fichier bruitverre.asm)
-<img src="images/screeshot1.png" alt="screen1"/>
+![Optional Text](../master/images/screenshot1.png)
