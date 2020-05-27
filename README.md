@@ -39,7 +39,7 @@ Le tableau de 'points' retrace les scores des joueurs differents, on se met dans
 de tableau points, on a teste dans le cas de signal mode 0x33 (51), qui marche sans probleme avec les valeurs attendues 
 comme  points[0] = 1, points[1] = 2 etc...  On a ainsi teste le cas avec du bruit en mode 0x3E (62), on a obtenue le meme 
 resultat qu'avec mode 0x33.
-
+![Optional Text](../master/images/screenshot3.png)
 
 
 
